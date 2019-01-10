@@ -43,3 +43,36 @@
 // 设置内容
 
 ```public void setContent(String content)```
+
+### 使用：
+
+在gradle中加入：
+
+`compile 'com.github.starno1:MoreTextView:1.0.2'`
+
+布局文件中使用：
+```
+<com.zxing.moretextview.MoreTextView
+        android:id="@+id/moreTextView"
+        app:contentText="内容"
+        app:contentTextColor="#23abf9"
+        app:contentTextSize="16"
+        app:durationMillis="200"
+        app:exCloseDrawable="@drawable/close"
+        app:exCloseText="展开"
+        app:exCloseTextColor="#ff0000"
+        app:exDrawableMarginLeft="20dp"
+        app:exOpenDrawable="@drawable/open"
+        app:exOpenText="收起"
+        app:exOpenTextColor="#00ff00"
+        app:expandGravity="LEFT"
+        app:expandTextSize="16"
+        app:expendMarginTop="20dp"
+        app:isExpendShow="true"
+        app:maxLine="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:padding="15dp"></com.zxing.moretextview.MoreTextView>
+```
+
