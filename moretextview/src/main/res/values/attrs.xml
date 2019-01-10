@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MoreTextView">
+        <attr name="contentTextSize" format="integer" />
+        <attr name="contentText" format="string" />
+        <attr name="contentTextColor" format="color" />
+        <attr name="expandTextSize" format="integer" />
+        <attr name="exOpenText" format="string" />
+        <attr name="exOpenTextColor" format="color" />
+        <attr name="exCloseText" format="string" />
+        <attr name="exCloseTextColor" format="color" />
+        <attr name="exOpenDrawable" format="reference" />
+        <attr name="exCloseDrawable" format="reference" />
+        <attr name="expandGravity" format="enum">
+            <enum name="LEFT" value="1" />
+            <enum name="RIGHT" value="2" />
+            <enum name="CENTER" value="3" />
+        </attr>
+        <attr name="maxLine" format="integer" />
+        <attr name="isExpendShow" format="boolean" />
+        <attr name="exDrawableMarginLeft" format="dimension" />
+        <attr name="expendMarginTop" format="dimension" />
+        <attr name="durationMillis" format="integer"/>
+
+    </declare-styleable>
+</resources>
