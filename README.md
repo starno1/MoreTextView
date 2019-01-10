@@ -1,6 +1,9 @@
 # MoreTextView
 多行文字，折叠/展开功能，多个属性自定义
 
+#### 先上效果图
+
+![MoreTextView](https://github.com/starno1/MoreTextView/blob/master/ScreenShot/ezgif-4-46e2aed8ddc1.gif,"MoreTextView")
 
 ### 自定义属性说明：
 **contentText** // 内容显示
