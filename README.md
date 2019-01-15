@@ -40,9 +40,13 @@
 
 ### 提供方法：
 
-// 设置内容
+// 设置文本内容
 
 ```public void setContent(String content)```
+
+// 设置Html片段
+
+```public void setHtmlContent(String content)```
 
 ### 使用：
 
