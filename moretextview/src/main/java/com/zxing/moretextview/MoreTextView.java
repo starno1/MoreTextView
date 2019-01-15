@@ -4,7 +4,10 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.support.annotation.Nullable;
+import android.text.Html;
+import android.text.Spanned;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -212,8 +215,29 @@ public class MoreTextView extends LinearLayout {
         }
     }
 
-    public void setContent(String content){
+    /**
+     * 设置文本文字
+     *
+     * @param content
+     */
+    public void setContent(String content) {
         tvContent.setText(content);
+        invalidate();
+    }
+
+    /**
+     * 设置html片段
+     */
+    public void setHtmlContent(String content) {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
+                tvContent.setText(Html.fromHtml(content, Html.FROM_HTML_MODE_LEGACY));
+            } else {
+                tvContent.setText(Html.fromHtml(content));
+            }
+        } catch (Exception e) {
+            tvContent.setText(content);
+        }
         invalidate();
     }
 
