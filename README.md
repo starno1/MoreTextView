@@ -3,7 +3,7 @@
 
 #### 先上效果图
 
-![MoreTextView](https://github.com/starno1/MoreTextView/blob/master/ScreenShot/ezgif-4-46e2aed8ddc1.gif)
+![更多](https://github.com/starno1/MoreTextView/blob/master/ScreenShot/ezgif-4-46e2aed8ddc1.gif)
 
 ### 自定义属性说明：
 **contentText** // 内容显示
